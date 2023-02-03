@@ -7,6 +7,9 @@ For define time of lap I needed to open files, saved information, and made opera
 For creating app I used Flask, HTML, CSS.
 
 
+![photo_2023-02-03_16-55-09](https://user-images.githubusercontent.com/94606127/216634601-c440564b-45f4-45de-a2ac-6b94a31f556a.jpg)
+
+
 Main page
 ![photo_2023-02-03_14-51-53](https://user-images.githubusercontent.com/94606127/216630757-ffe05e0b-8c59-435d-a4de-6e2932276fb4.jpg)
 
