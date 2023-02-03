@@ -4,7 +4,7 @@ This is the pet-project from my course. My task was created report of qualificat
 
 I used os lib for provided relative path to files.
 For define time of lap I needed to open files, saved information, and made operation with datetime lib for converting data and calculate time of laps.
-For creating app I used Flask, HTML, CSS.
+For creating app I used Flask, HTML, CSS. For testing I used pytest lib
 
 
 ![photo_2023-02-03_16-55-09](https://user-images.githubusercontent.com/94606127/216634601-c440564b-45f4-45de-a2ac-6b94a31f556a.jpg)
