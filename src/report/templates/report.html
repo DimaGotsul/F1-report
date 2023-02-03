@@ -1,0 +1,46 @@
+
+<style>
+  table {
+  border-collapse: collapse;
+  width: 75%;
+  color: white;
+}
+  tr:hover {background-color: red;}
+  td {
+  text-align: left;
+  height: 25px;
+  }
+  thead th {
+  background-color: red;
+  }
+</style>
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Report - Monaco GP</title>
+{% endblock %}
+
+{% block body %}
+<div class="container my-4">
+  <table>
+    <thead>
+       <tr>
+           <th>Place</th>
+           <th>Driver</th>
+           <th>Team</th>
+           <th>Time</th>
+       </tr>
+      </thead>
+  {% for key, value in report.items() %}
+  <tbody>
+    <tr>
+        <th>{{ loop.index-0 }}</th>
+        <td>{{ value.0 }}</td>
+        <td>{{ value.1 }}</td>
+        <td>{{ value.2 }}</td>
+    </tr>
+  </tbody>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

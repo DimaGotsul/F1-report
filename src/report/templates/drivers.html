@@ -1,0 +1,48 @@
+<style>
+  table {
+  border-collapse: collapse;
+  width: 75%;
+  color: white;
+  }
+  tr:hover {background-color: red;}
+  td {
+  text-align: left;
+  height: 25px;
+  }
+  th {
+  background-color: red;
+  }
+  tr a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  }
+  .a { color: white; }
+</style>
+{% extends 'base.html' %}
+{% block title %}
+  <title>Drivers - Monaco GP</title>
+{% endblock %}
+{% block body %}
+<div class="container my-4 a">
+  <table>
+      <thead>
+       <tr>
+           <th>Code</th>
+           <th>Driver</th>
+           <th>Team</th>
+       </tr>
+      </thead>
+      {% for key, value in data.items() %}
+      <tbody>
+      <tr>
+          <td><a class="a" href='{{ value.2 }}' target="_blank">{{ key }}</a></td>
+          <td>{{ value.0 }}</td>
+          <td>{{ value.1 }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+  </table>
+</div>
+{% endblock %}
+

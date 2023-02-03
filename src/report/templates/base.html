@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+      background-color: #DBF9FC;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        max-width: 100%
+      }
+      .image {
+        flex-basis: 60%
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+        max-width: 55%;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    {% block title %}
+      <title>2018 Monaco GP</title>
+    {% endblock %}
+</head>
+<body style="background-color:#504F4F;">
+<div class="body">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="https://www.formula1.com/en/results.html/2018/races/984/monaco/race-result.html" target="_blank">
+      <img src="static/logo.png" alt="logo" width="50" height="60" >
+    </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link active " href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="drivers">Drivers</a>
+        <a class="nav-item nav-link active" href="report">Report</a>
+    </div>
+  </div>
+  </div>
+</nav>
+  <div class="container text-certain my-3 bg-dark text-white">
+  {% block body %}
+      <div class="text">
+          <h1 class="my-3">Short information</h1>
+          <p class="my-4 ">The 2018 Monaco Grand Prix (formally known as the Formula 1 Grand Prix de Monaco 2018) was a Formula
+              One motor race that was held on 27 May 2018 at the Circuit de Monaco, a street circuit that runs through
+              the Principality of Monaco. It was the 6th round of the 2018 FIA Formula One World Championship,
+              the 76th time the Monaco Grand Prix had been held, and the 65th time it had been a round of the
+              Formula One World Championship since the inception of the series in 1950. It was the last victory
+              for Daniel Ricciardo until the 2021 Italian Grand Prix.
+              The race was won by Daniel Ricciardo in Red Bull, with Sebastian Vettel in
+              Ferrari coming second. Lewis Hamilton in Mercedes finished third, maintaining the championship lead over Vettel.
+              Mercedes also led in the Constructors' Championship ahead of Ferrari.</p>
+      </div>
+      <div style="margin:0px auto;display:block">
+          <img
+                  src="static/map.jpg"
+                  alt="GP map"
+                  width="400"
+                  height="400"
+          >
+      </div>
+  {% endblock %}
+  </div>
+</div>
+</body>
+</html>
